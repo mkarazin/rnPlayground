@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: [
     'airbnb-base',
-    'plugin:flowtype/recommended'
+    'plugin:flowtype/recommended',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -16,15 +16,18 @@ module.exports = {
   plugins: [
     'flowtype',
     'react',
-    'react-native'
+    'react-native',
+    'react-hooks'
   ],
   rules: {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react-native/no-inline-styles': 2,
     'react-native/no-color-literals': 2,
     'react-native/no-raw-text': 2,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   }
 };
