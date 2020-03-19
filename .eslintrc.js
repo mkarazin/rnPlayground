@@ -1,4 +1,10 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: [
+    'airbnb-base',
+    'plugin:flowtype/recommended'
+  ],
+  parser: 'babel-eslint',
+  plugins: ['flowtype'],
+  rules: {}
 };
